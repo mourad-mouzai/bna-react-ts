@@ -1,10 +1,15 @@
-import React from "react";
+import { Box } from "@mui/material";
+import Header from "./pages/header";
+import Footer from "./pages/footer";
+import Content from "./pages/content";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl text-red-600 font-bold underline">BNA App</h1>
-    </div>
+    <Box className="flex flex-col">
+      <Header></Header>
+      <Content></Content>
+      <Footer></Footer>
+    </Box>
   );
 };
 
